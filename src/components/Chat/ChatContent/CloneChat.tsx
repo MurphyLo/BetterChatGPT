@@ -19,12 +19,12 @@ const CloneChat = React.memo(() => {
 
     if (chats) {
       const index = useStore.getState().currentChatIndex;
-      let title = `Copy of ${chats[index].title}`;
+      let title = `${chats[index].title} Copy`;
       let i = 0;
 
       while (chats.some((chat) => chat.title === title)) {
         i += 1;
-        title = `Copy ${i} of ${chats[index].title}`;
+        title = `${chats[index].title} Copy${i}`;
       }
 
       const clonedChat = JSON.parse(JSON.stringify(chats[index]));
