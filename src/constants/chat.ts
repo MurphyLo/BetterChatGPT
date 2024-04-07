@@ -19,7 +19,7 @@ Latex (inline): $$ \\lambda_{n} $$
 
 Latex (block):
 $$
-A = \pi r^2
+A = \\pi r^2
 $$`;
 
 export const modelOptions: ModelOptions[] = [
