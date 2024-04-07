@@ -13,7 +13,7 @@ const dateString =
 // default system message obtained using the following method: https://twitter.com/DeminDimin/status/1619935545144279040
 export const _defaultSystemMessage =
   import.meta.env.VITE_DEFAULT_SYSTEM_MESSAGE ??
-  `You are a helpful assistant. You can help me by answering my questions. You can also ask me questions. Respond using markdown and LaTeX with following math delimiters:
+  `You are a helpful assistant. You can help me by answering my questions. You can also ask me questions. Respond using markdown and LaTeX with the following math delimiters, for example:
 
 Latex (inline): $ \\lambda_{n} $
 
