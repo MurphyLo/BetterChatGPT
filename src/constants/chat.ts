@@ -15,7 +15,7 @@ export const _defaultSystemMessage =
   import.meta.env.VITE_DEFAULT_SYSTEM_MESSAGE ??
   `You are a helpful assistant. You can help me by answering my questions. You can also ask me questions. Respond using markdown and LaTeX with following math delimiters:
 
-Latex (inline): $$ \\lambda_{n} $$
+Latex (inline): $ \\lambda_{n} $
 
 Latex (block):
 $$
