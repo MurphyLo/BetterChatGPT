@@ -44,7 +44,7 @@ export const createConfigSlice: StoreSlice<ConfigSlice> = (set, get) => ({
   defaultSystemMessage: _defaultSystemMessage,
   inlineLatex: true,
   markdownMode: true,
-  countTotalTokens: true,
+  countTotalTokens: false,
   totalTokenUsed: {},
   setOpenConfig: (openConfig: boolean) => {
     set((prev: ConfigSlice) => ({
