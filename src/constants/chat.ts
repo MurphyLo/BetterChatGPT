@@ -124,9 +124,49 @@ export const modelCost = {
     prompt: { price: 0.01, unit: 1000 },
     completion: { price: 0.03, unit: 1000 },
   },
-  'claude-3-opus-20240229': {
+  'claude-3-opus': {
     prompt: { price: 0.06, unit: 1000 },
     completion: { price: 0.30, unit: 1000 },
+  },
+  'command-r': {
+    prompt: { price: 0.0005, unit: 1000 },
+    completion: { price: 0.0015, unit: 1000 },
+  },
+  'command-r-plus': {
+    prompt: { price: 0.003, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
+  'mistral-medium': {
+    prompt: { price: 0.0027, unit: 1000 },
+    completion: { price: 0.0081, unit: 1000 },
+  },
+  'mistral-large': {
+    prompt: { price: 0.008, unit: 1000 },
+    completion: { price: 0.024, unit: 1000 },
+  },
+  'gemini-pro': {
+    prompt: { price: 0, unit: 1000 },
+    completion: { price: 0, unit: 1000 },
+  },
+  'glm-4': {
+    prompt: { price: 0.014, unit: 1000 },
+    completion: { price: 0.014, unit: 1000 },
+  },
+  'abab6-chat': {
+    prompt: { price: 0., unit: 1000 },
+    completion: { price: 0., unit: 1000 },
+  },
+  'moonshot-v1-128k': {
+    prompt: { price: 0.0084, unit: 1000 },
+    completion: { price: 0.0084, unit: 1000 },
+  },
+  'ERNIE-Bot-4': {
+    prompt: { price: 0.021, unit: 1000 },
+    completion: { price: 0.042, unit: 1000 },
+  },
+  'SparkDesk': {
+    prompt: { price: 0, unit: 1000 },
+    completion: { price: 0, unit: 1000 },
   },
 };
 
