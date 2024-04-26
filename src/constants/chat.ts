@@ -39,6 +39,7 @@ export const modelOptions: ModelOptions[] = [
   'moonshot-v1-128k',
   'ERNIE-Bot-4',
   'SparkDesk',
+  'SenseChat-5',
   // 'gpt-3.5-turbo-0301',
   // 'gpt-4-0314',
   // 'gpt-4-32k-0314',
@@ -63,6 +64,7 @@ export const modelMaxToken = {
   'moonshot-v1-128k': 12800,
   'ERNIE-Bot-4': 8000,
   'SparkDesk': 8000,
+  'SenseChat-5': 128000,
 };
 
 export const modelCost = {
@@ -129,6 +131,10 @@ export const modelCost = {
   'SparkDesk': {
     prompt: { price: 0, unit: 1000 },
     completion: { price: 0, unit: 1000 },
+  },
+  'SenseChat-5': {
+    prompt: { price: 0.014, unit: 1000 },
+    completion: { price: 0.014, unit: 1000 },
   },
 };
 
