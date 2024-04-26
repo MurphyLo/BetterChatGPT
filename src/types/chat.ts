@@ -65,7 +65,8 @@ export type ModelOptions =
   | 'abab6-chat'
   | 'moonshot-v1-128k'
   | 'ERNIE-Bot-4'
-  | 'SparkDesk';
+  | 'SparkDesk'
+  | 'SenseChat-5';
 
 export type TotalTokenUsed = {
   [model in ModelOptions]?: {
