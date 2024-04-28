@@ -62,7 +62,7 @@ export type ModelOptions =
   | 'mistral-large'
   | 'gemini-pro'
   | 'glm-4'
-  | 'abab6-chat'
+  | 'abab6.5-chat'
   | 'moonshot-v1-128k'
   | 'ERNIE-Bot-4'
   | 'SparkDesk'
