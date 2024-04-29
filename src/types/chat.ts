@@ -65,7 +65,8 @@ export type ModelOptions =
   | 'moonshot-v1-128k'
   | 'ERNIE-Bot-4'
   | 'SparkDesk'
-  | 'SenseChat-5';
+  | 'SenseChat-5'
+  | 'qwen1.5-110b-chat';
 
 export type TotalTokenUsed = {
   [model in ModelOptions]?: {
