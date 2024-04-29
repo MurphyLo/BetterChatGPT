@@ -39,6 +39,7 @@ export const modelOptions: ModelOptions[] = [
   'ERNIE-Bot-4',
   'SparkDesk',
   'SenseChat-5',
+  'qwen1.5-110b-chat',
   // 'gpt-3.5-turbo-0301',
   // 'gpt-4-0314',
   // 'gpt-4-32k-0314',
@@ -63,6 +64,7 @@ export const modelMaxToken = {
   'ERNIE-Bot-4': 8000,
   'SparkDesk': 8000,
   'SenseChat-5': 128000,
+  'qwen1.5-110b-chat': 32000,
 };
 
 export const modelCost = {
@@ -129,6 +131,10 @@ export const modelCost = {
   'SenseChat-5': {
     prompt: { price: 0.014, unit: 1000 },
     completion: { price: 0.014, unit: 1000 },
+  },
+  'qwen1.5-110b-chat': {
+    prompt: { price: 0.003, unit: 1000 },
+    completion: { price: 0.003, unit: 1000 },
   },
 };
 
