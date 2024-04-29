@@ -53,13 +53,12 @@ export const modelMaxToken = {
   'gpt-4-32k': 32768,
   'gpt-4-turbo-preview': 128000,
   'claude-3-opus': 200000,
-  'command-r': 12800,
   'command-r-plus': 12800,
   'mistral-medium': 32000,
   'mistral-large': 32000,
   'gemini-pro': 12800,
   'glm-4': 8000,
-  'abab6.5-chat': 32000,
+  'abab6.5-chat': 8000,
   'moonshot-v1-128k': 12800,
   'ERNIE-Bot-4': 8000,
   'SparkDesk': 8000,
@@ -90,10 +89,6 @@ export const modelCost = {
   'claude-3-opus': {
     prompt: { price: 0.06, unit: 1000 },
     completion: { price: 0.30, unit: 1000 },
-  },
-  'command-r': {
-    prompt: { price: 0.0005, unit: 1000 },
-    completion: { price: 0.0015, unit: 1000 },
   },
   'command-r-plus': {
     prompt: { price: 0.003, unit: 1000 },
