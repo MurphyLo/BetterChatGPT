@@ -11,7 +11,21 @@ import { Theme } from '@type/theme';
 import ApiPopup from '@components/ApiPopup';
 import Toast from '@components/Toast';
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const apiKeyFromUrl = queryParams.get('api_key');
+    if (apiKeyFromUrl) {
+      localStorage.setItem('apiKey', apiKeyFromUrl);
+    }
+  }, []);
+
+  
   const initialiseNewChat = useInitialiseNewChat();
   const setChats = useStore((state) => state.setChats);
   const setTheme = useStore((state) => state.setTheme);
