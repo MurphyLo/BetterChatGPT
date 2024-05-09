@@ -14,12 +14,15 @@ import Toast from '@components/Toast';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 function App() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const apiKeyFromUrl = urlParams.get('apiKey');
-  if (apiKeyFromUrl) {
-    localStorage.setItem('apiKey', apiKeyFromUrl);
-    setApiKey(apiKeyFromUrl);
-  }
+  const location = useLocation();
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const apiKeyFromUrl = queryParams.get('api_key');
+    if (apiKeyFromUrl) {
+      localStorage.setItem('apiKey', apiKeyFromUrl);
+    }
+  }, []);
     
   
   const initialiseNewChat = useInitialiseNewChat();
