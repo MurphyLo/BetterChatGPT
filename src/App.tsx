@@ -18,14 +18,15 @@ function App() {
 
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
-    const apiKeyFromUrl = queryParams.get('api_key');
+    const apiKeyFromUrl = queryParams.get('apiKey');
     if (apiKeyFromUrl) {
       localStorage.setItem('apiKey', apiKeyFromUrl);
       queryParams.delete('apiKey'); // 删除URL中的apiKey参数
-      history.replace({ search: queryParams.toString() }); // 使用修改后的查询字符串更新URL
-      window.location.reload(); // 刷新页面，使变更生效
+      const newSearch = queryParams.toString(); // 使用history.replace更新URL，并清除apiKey参数
+      history.replace(location.pathname + (newSearch ? `?${newSearch}` : ''));
+      window.location.reload(); // 为确保API key的应用，刷新页面
     }
-  }, []);
+  }, [location, history]);
 
   
   const initialiseNewChat = useInitialiseNewChat();
