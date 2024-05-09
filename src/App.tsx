@@ -21,6 +21,9 @@ function App() {
     const apiKeyFromUrl = queryParams.get('api_key');
     if (apiKeyFromUrl) {
       localStorage.setItem('apiKey', apiKeyFromUrl);
+      queryParams.delete('apiKey'); // 删除URL中的apiKey参数
+      history.replace({ search: queryParams.toString() }); // 使用修改后的查询字符串更新URL
+      window.location.reload(); // 刷新页面，使变更生效
     }
   }, []);
 
