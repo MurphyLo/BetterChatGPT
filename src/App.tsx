@@ -14,19 +14,24 @@ import Toast from '@components/Toast';
 import { useLocation, useHistory } from 'react-router-dom';
 
 function App() {
-  const location = useLocation();
+    const location = useLocation();
+    const navigate = useNavigate();
 
-  useEffect(() => {
-    const queryParams = new URLSearchParams(location.search);
-    const apiKeyFromUrl = queryParams.get('apiKey');
-    if (apiKeyFromUrl) {
-      localStorage.setItem('apiKey', apiKeyFromUrl);
-      queryParams.delete('apiKey'); // 删除URL中的apiKey参数
-      const newSearch = queryParams.toString(); // 使用history.replace更新URL，并清除apiKey参数
-      history.replace(location.pathname + (newSearch ? `?${newSearch}` : ''));
-      window.location.reload(); // 为确保API key的应用，刷新页面
-    }
-  }, [location, history]);
+    useEffect(() => {
+      const queryParams = new URLSearchParams(location.search);
+      const apiKeyFromUrl = queryParams.get('apiKey');
+      if (apiKeyFromUrl) {
+        localStorage.setItem('apiKey', apiKeyFromUrl);
+        queryParams.delete('apiKey'); // 删除URL中的apiKey参数
+
+        // 使用navigate来更新URL，并清除apiKey参数
+        const newSearch = queryParams.toString();
+        navigate(location.pathname + (newSearch ? `?${newSearch}` : ''), { replace: true });
+
+        // 为确保API key的应用，刷新页面
+        window.location.reload();
+      }
+  }, [location, navigate]);
 
   
   const initialiseNewChat = useInitialiseNewChat();
