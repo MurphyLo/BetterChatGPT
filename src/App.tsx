@@ -11,7 +11,6 @@ import { Theme } from '@type/theme';
 import ApiPopup from '@components/ApiPopup';
 import Toast from '@components/Toast';
 
-import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 function App() {
