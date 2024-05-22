@@ -28,6 +28,7 @@ export const modelOptions: ModelOptions[] = [
   'gpt-4',
   'gpt-4-32k',
   'gpt-4-turbo-preview',
+  'gpt-4-o',
   'claude-3-opus',
   'command-r-plus',
   'mistral-medium',
@@ -40,6 +41,7 @@ export const modelOptions: ModelOptions[] = [
   'SparkDesk',
   'SenseChat-5',
   'qwen1.5-110b-chat',
+  'Baichuan4',
   // 'gpt-3.5-turbo-0301',
   // 'gpt-4-0314',
   // 'gpt-4-32k-0314',
@@ -88,6 +90,10 @@ export const modelCost = {
     prompt: { price: 0.01, unit: 1000 },
     completion: { price: 0.03, unit: 1000 },
   },
+  'gpt-4o': {
+    prompt: { price: 0.005, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
+  },
   'claude-3-opus': {
     prompt: { price: 0.06, unit: 1000 },
     completion: { price: 0.30, unit: 1000 },
@@ -135,6 +141,10 @@ export const modelCost = {
   'qwen1.5-110b-chat': {
     prompt: { price: 0.003, unit: 1000 },
     completion: { price: 0.003, unit: 1000 },
+  },
+  'Baichuan4': {
+    prompt: { price: 0.014, unit: 1000 },
+    completion: { price: 0.014, unit: 1000 },
   },
 };
 
