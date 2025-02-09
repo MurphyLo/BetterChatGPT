@@ -29,19 +29,8 @@ export const modelOptions: ModelOptions[] = [
   'gpt-4-32k',
   'gpt-4-turbo-preview',
   'gpt-4o',
+  'o1-preview',
   'claude-3-opus',
-  'command-r-plus',
-  'mistral-medium',
-  'mistral-large',
-  'gemini-pro',
-  'glm-4',
-  'abab6.5-chat',
-  'moonshot-v1-128k',
-  'ERNIE-Bot-4',
-  'SparkDesk',
-  'SenseChat-5',
-  'qwen1.5-110b-chat',
-  'Baichuan4',
   // 'gpt-3.5-turbo-0301',
   // 'gpt-4-0314',
   // 'gpt-4-32k-0314',
@@ -56,19 +45,8 @@ export const modelMaxToken = {
   'gpt-4-32k': 32000,
   'gpt-4-turbo-preview': 128000,
   'gpt-4o': 128000,
+  'o1-preview': 64000,
   'claude-3-opus': 200000,
-  'command-r-plus': 128000,
-  'mistral-medium': 32000,
-  'mistral-large': 32000,
-  'gemini-pro': 1000000,
-  'glm-4': 8000,
-  'abab6.5-chat': 8000,
-  'moonshot-v1-128k': 128000,
-  'ERNIE-Bot-4': 8000,
-  'SparkDesk': 8000,
-  'SenseChat-5': 128000,
-  'qwen1.5-110b-chat': 32000,
-  'Baichuan4': 12800,
 };
 
 export const modelCost = {
@@ -93,60 +71,16 @@ export const modelCost = {
     completion: { price: 0.03, unit: 1000 },
   },
   'gpt-4o': {
-    prompt: { price: 0.005, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
+    prompt: { price: 0.0025, unit: 1000 },
+    completion: { price: 0.01, unit: 1000 },
+  },
+  'o1-preview': {
+    prompt: { price: 0.015, unit: 1000 },
+    completion: { price: 0.06, unit: 1000 },
   },
   'claude-3-opus': {
     prompt: { price: 0.06, unit: 1000 },
     completion: { price: 0.30, unit: 1000 },
-  },
-  'command-r-plus': {
-    prompt: { price: 0.003, unit: 1000 },
-    completion: { price: 0.015, unit: 1000 },
-  },
-  'mistral-medium': {
-    prompt: { price: 0.0027, unit: 1000 },
-    completion: { price: 0.0081, unit: 1000 },
-  },
-  'mistral-large': {
-    prompt: { price: 0.008, unit: 1000 },
-    completion: { price: 0.024, unit: 1000 },
-  },
-  'gemini-pro': {
-    prompt: { price: 0, unit: 1000 },
-    completion: { price: 0, unit: 1000 },
-  },
-  'glm-4': {
-    prompt: { price: 0.014, unit: 1000 },
-    completion: { price: 0.014, unit: 1000 },
-  },
-  'abab6.5-chat': {
-    prompt: { price: 0.0042, unit: 1000 },
-    completion: { price: 0.0042, unit: 1000 },
-  },
-  'moonshot-v1-128k': {
-    prompt: { price: 0.0084, unit: 1000 },
-    completion: { price: 0.0084, unit: 1000 },
-  },
-  'ERNIE-Bot-4': {
-    prompt: { price: 0.021, unit: 1000 },
-    completion: { price: 0.042, unit: 1000 },
-  },
-  'SparkDesk': {
-    prompt: { price: 0, unit: 1000 },
-    completion: { price: 0, unit: 1000 },
-  },
-  'SenseChat-5': {
-    prompt: { price: 0.014, unit: 1000 },
-    completion: { price: 0.014, unit: 1000 },
-  },
-  'qwen1.5-110b-chat': {
-    prompt: { price: 0.003, unit: 1000 },
-    completion: { price: 0.003, unit: 1000 },
-  },
-  'Baichuan4': {
-    prompt: { price: 0.014, unit: 1000 },
-    completion: { price: 0.014, unit: 1000 },
   },
 };
 
