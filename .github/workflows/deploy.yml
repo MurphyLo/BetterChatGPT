@@ -38,7 +38,7 @@ jobs:
           DEFAULT_ENDPOINT: ${{ secrets.DEFAULT_ENDPOINT }}
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@main
         with:
           path: './dist'
 
