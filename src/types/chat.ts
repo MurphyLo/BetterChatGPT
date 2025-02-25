@@ -57,7 +57,8 @@ export type ModelOptions =
   | 'gpt-4-turbo-preview'
   | 'gpt-4o'
   | 'o1-preview'
-  | 'claude-3-opus';
+  | 'claude-3-opus'
+  | 'claude-3-7-sonnet-thinking';
 
 export type TotalTokenUsed = {
   [model in ModelOptions]?: {
