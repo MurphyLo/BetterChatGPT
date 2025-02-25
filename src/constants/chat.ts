@@ -31,6 +31,7 @@ export const modelOptions: ModelOptions[] = [
   'gpt-4o',
   'o1-preview',
   'claude-3-opus',
+  'claude-3-7-sonnet-thinking',
   // 'gpt-3.5-turbo-0301',
   // 'gpt-4-0314',
   // 'gpt-4-32k-0314',
@@ -46,7 +47,8 @@ export const modelMaxToken = {
   'gpt-4-turbo-preview': 128000,
   'gpt-4o': 128000,
   'o1-preview': 64000,
-  'claude-3-opus': 200000,
+  'claude-3-opus': 64000,
+  'claude-3-7-sonnet-thinking': 64000,
 };
 
 export const modelCost = {
@@ -81,6 +83,10 @@ export const modelCost = {
   'claude-3-opus': {
     prompt: { price: 0.06, unit: 1000 },
     completion: { price: 0.30, unit: 1000 },
+  },
+  'claude-3-7-sonnet-thinking': {
+    prompt: { price: 0.003, unit: 1000 },
+    completion: { price: 0.015, unit: 1000 },
   },
 };
 
