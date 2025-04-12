@@ -56,6 +56,7 @@ export type ModelOptions =
   | 'gpt-4-32k'
   | 'gpt-4-turbo-preview'
   | 'gpt-4o'
+  | 'chatgpt-4o-latest'
   | 'o1-preview'
   | 'claude-3-opus'
   | 'claude-3-7-sonnet-thinking';
