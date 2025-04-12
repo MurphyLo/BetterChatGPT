@@ -29,6 +29,7 @@ export const modelOptions: ModelOptions[] = [
   'gpt-4-32k',
   'gpt-4-turbo-preview',
   'gpt-4o',
+  'chatgpt-4o-latest',
   'o1-preview',
   'claude-3-opus',
   'claude-3-7-sonnet-thinking',
@@ -46,6 +47,7 @@ export const modelMaxToken = {
   'gpt-4-32k': 32000,
   'gpt-4-turbo-preview': 128000,
   'gpt-4o': 128000,
+  'chatgpt-4o-latest': 128000,
   'o1-preview': 64000,
   'claude-3-opus': 64000,
   'claude-3-7-sonnet-thinking': 64000,
@@ -73,6 +75,10 @@ export const modelCost = {
     completion: { price: 0.03, unit: 1000 },
   },
   'gpt-4o': {
+    prompt: { price: 0.0025, unit: 1000 },
+    completion: { price: 0.01, unit: 1000 },
+  },
+  'chatgpt-4o-latest': {
     prompt: { price: 0.0025, unit: 1000 },
     completion: { price: 0.01, unit: 1000 },
   },
